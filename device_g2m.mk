@@ -370,15 +370,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGsmDevice=1 \
     telephony.lteOnCdmaDevice=1
 
+# NFC access control + feature files + configuration
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
+    device/lge/g2m/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/lge/g2m/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+
 # NFC packages
 PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
-    nfc_nci.g2m \
     com.android.nfc_extras
 
-
-NFCEE_ACCESS_PATH := device/lge/g2m/prebuilt/etc/nfcee_access.xml
+NFCEE_ACCESS_PATH := device/lge/g2m/nfc/nfcee_access.xml
 
 # QC time services
 PRODUCT_PROPERTY_OVERRIDES += \
