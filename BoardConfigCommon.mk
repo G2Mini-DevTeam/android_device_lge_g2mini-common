@@ -21,18 +21,15 @@
 # definition file).
 #
 
-LOCAL_PATH := device/lge/g2m
-TARGET_SPECIFIC_HEADER_PATH += device/lge/g2m/include
+LOCAL_PATH := device/lge/g2m-common
+TARGET_SPECIFIC_HEADER_PATH += device/lge/g2m-common/include
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 
 # Vibrator
-# BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/lge/g2m/vibrator/vibrator.c
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := d620,g2m
+# BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/lge/g2m-common/vibrator/vibrator.c
 
 # Architecture
 TARGET_ARCH := arm
@@ -55,7 +52,7 @@ TARGET_KERNEL_SOURCE := kernel/lge/g2m
 BOARD_KERNEL_OFFSET := 0x00008000
 TARGET_KERNEL_CONFIG := cm12_g2m_defconfig
 # TARGET_KERNEL_CONFIG := g2m_global_com_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2m/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2m-common/mkbootimg.mk
 
 # Audio
 AUDIO_FEATURE_DISABLED_FM := false
@@ -132,7 +129,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lge/g2m/rootdir/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/lge/g2m-common/rootdir/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 DEVICE_RESOLUTION := 540x960
 TW_FLASH_FROM_STORAGE := true
@@ -157,8 +154,8 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_USB_STORAGE := true
 
-PRODUCT_COPY_FILES += device/lge/g2m/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
-PRODUCT_COPY_FILES += device/lge/g2m/rootdir/extra.fstab:recovery/root/etc/extra.fstab
+PRODUCT_COPY_FILES += device/lge/g2m-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/lge/g2m-common/rootdir/extra.fstab:recovery/root/etc/extra.fstab
 
 # Nfc
 BOARD_NFC_HAL_SUFFIX := g2m
