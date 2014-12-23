@@ -50,7 +50,6 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x01e00000
 TARGET_KERNEL_SOURCE := kernel/lge/g2m
 BOARD_KERNEL_OFFSET := 0x00008000
-TARGET_KERNEL_CONFIG := cm12_g2m_defconfig
 # TARGET_KERNEL_CONFIG := g2m_global_com_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2m-common/mkbootimg.mk
 
