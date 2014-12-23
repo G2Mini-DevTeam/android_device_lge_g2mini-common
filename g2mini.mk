@@ -104,10 +104,6 @@ PRODUCT_COPY_FILES += \
     device/lge/g2mini-common/rootdir/init.g2m.rc:root/init.g2m.rc \
     device/lge/g2mini-common/rootdir/init.g2m.usb.rc:root/init.g2m.usb.rc \
     device/lge/g2mini-common/rootdir/init.g2m-common_product.rc:root/init.g2mini-common_product.rc \
- 
- 
- 
- 
     device/lge/g2mini-common/rootdir/init.zetaw.bt_vendor.rc:root/init.zetaw.bt_vendor.rc \
     device/lge/g2mini-common/rootdir/init.zetaw.class_core.sh:root/init.zetaw.class_core.sh \
     device/lge/g2mini-common/rootdir/init.zetaw.cmm.usb.sh:root/init.zetaw.cmm.usb.sh \
@@ -122,7 +118,7 @@ PRODUCT_COPY_FILES += \
     device/lge/g2mini-common/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
     device/lge/g2mini-common/rootdir/ueventd.g2mini-common.rc:root/ueventd.g2mini-common.rc \
     device/lge/g2mini-common/rootdir/sbin/bbx:root/sbin/bbx \
-    device/lge/g2miniini-common/rootdir/fscheck.sh:root/fscheck.sh
+    device/lge/g2mini-common/rootdir/fscheck.sh:root/fscheck.sh
 
 # TWRP
 PRODUCT_COPY_FILES += \
@@ -407,5 +403,5 @@ PRODUCT_LOCALES += hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
-$(call inherit-product, vendor/lge/g2mini-common/g2m-common-vendor.mk)
+$(call inherit-product, vendor/lge/g2m/g2m-vendor.mk)
 
