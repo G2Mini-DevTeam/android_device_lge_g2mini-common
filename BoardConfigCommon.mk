@@ -21,8 +21,8 @@
 # definition file).
 #
 
-LOCAL_PATH := device/lge/g2m-common
-TARGET_SPECIFIC_HEADER_PATH += device/lge/g2m-common/include
+LOCAL_PATH := device/lge/g2mini-common
+TARGET_SPECIFIC_HEADER_PATH += device/lge/g2mini-common/include
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8226
@@ -50,7 +50,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x01e00000
 TARGET_KERNEL_SOURCE := kernel/lge/g2m
 BOARD_KERNEL_OFFSET := 0x00008000
 # TARGET_KERNEL_CONFIG := g2m_global_com_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2m-common/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/g2mini-common/mkbootimg.mk
 
 # Audio
 AUDIO_FEATURE_DISABLED_FM := false
@@ -127,7 +127,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/lge/g2m-common/rootdir/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/lge/g2mini-common/rootdir/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 DEVICE_RESOLUTION := 540x960
 TW_FLASH_FROM_STORAGE := true
@@ -152,8 +152,8 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_USB_STORAGE := true
 
-PRODUCT_COPY_FILES += device/lge/g2m-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
-PRODUCT_COPY_FILES += device/lge/g2m-common/rootdir/extra.fstab:recovery/root/etc/extra.fstab
+PRODUCT_COPY_FILES += device/lge/g2mini-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+PRODUCT_COPY_FILES += device/lge/g2mini-common/rootdir/extra.fstab:recovery/root/etc/extra.fstab
 
 # Nfc
 BOARD_NFC_HAL_SUFFIX := g2m
