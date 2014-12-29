@@ -257,6 +257,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libqdutils \
     libtilerenderer
+    
+#Softkeys
+PRODUCT_PROPERTY_OVERRIDES += \
+    qemu.hw.mainkeys=0
 
 # Omx
 PRODUCT_PACKAGES += \
