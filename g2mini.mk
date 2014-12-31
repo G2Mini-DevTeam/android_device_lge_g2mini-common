@@ -116,7 +116,7 @@ PRODUCT_COPY_FILES += \
     device/lge/g2mini-common/rootdir/init.zetaw.syspart_fixup.sh:root/init.zetaw.syspart_fixup.sh \
     device/lge/g2mini-common/rootdir/init.zetaw.usb.rc:root/init.zetaw.usb.rc \
     device/lge/g2mini-common/rootdir/init.zetaw.usb.sh:root/init.zetaw.usb.sh \
-    device/lge/g2mini-common/rootdir/ueventd.g2mini-common.rc:root/ueventd.g2mini-common.rc \
+    device/lge/g2mini-common/rootdir/ueventd.g2m.rc:root/ueventd.g2m.rc \
     device/lge/g2mini-common/rootdir/sbin/bbx:root/sbin/bbx \
     device/lge/g2mini-common/rootdir/fscheck.sh:root/fscheck.sh
 
